@@ -1,0 +1,35 @@
+
+---
+
+# FIRST PLAY --> multiple tasks
+- name: Install HTTPD server
+  hosts: n1
+  remote_user: centos
+  become: yes
+
+  tasks:
+  - name: Install HTTPD
+    yum:
+      name: httpd
+      state: present
+
+  - name: Start HTTPD
+    service:
+      name: httpd
+      state: started
+
+  - name: Enable HTTPD
+    service:
+      name: httpd
+      state: started
+
+  - name: Install git
+    yum:
+      name: git
+      state: present
+
+  - name: Host the code
+    git:
+      repo: https://github.com/CeeyIT-Solutions/food3.git
+      dest: /var/www/html
+...
