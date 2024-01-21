@@ -2,7 +2,7 @@
 #curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 #sudo yum -y install unzip && unzip awscliv2.zip
 #sudo ./aws/install
-#aws configure >> Enter IAM user credentials
+#aws configure >> Enter IAM user credentials and access keys
 
 # Terraform Block
 terraform {
