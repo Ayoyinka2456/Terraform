@@ -1,3 +1,9 @@
+#aws configuration
+#curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+#sudo yum -y install unzip && unzip awscliv2.zip
+#sudo ./aws/install
+#aws configure >> Enter IAM user credentials
+
 # Terraform Block
 terraform {
   required_version = "~> 1.7.0"
